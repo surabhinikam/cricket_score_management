@@ -146,29 +146,47 @@ erDiagram
 ## 📸 Project Screenshots & UI Walkthrough
 
 ### 1. Modern Dark Dashboard (`/`)
-![Dashboard UI](docs/screenshots/dashboard.jpg)
+![Dashboard UI](docs/screenshots/dashboard.png)
 * **Description**: The command center of the application. Displays high-level platform statistics (Total Matches, Live In-Progress Matches, Registered Teams, and Players), along with active live fixture cards. Live cards feature pulsing real-time indicators, on-field batter scores, current bowler figures, required run rate (RRR), and current run rate (CRR). Below the cards is the fixture timetable.
 
 ---
 
-### 2. Interactive Live Scorer Console (`/score-management`)
-![Live Scorer Console](docs/screenshots/live_scorer.jpg)
+### 2. Real-Time Live Match Center (`/live`)
+![Live Match Center](docs/screenshots/live_matches.png)
+* **Description**: Dedicated live match tracking hub with automatic 5-second polling intervals. Displays the active match between India and Australia, current score (`145/4`), current overs (`16.3 / 20`), required target (`179`), active batsmen (`Virat Kohli*`, `Hardik Pandya`), bowler spell figures (`Mitchell Starc`), and the current over delivery sequence.
+
+---
+
+### 3. Interactive Live Scorer Console (`/score-management`)
+![Live Scorer Console](docs/screenshots/live_scorer.png)
 * **Description**: The core live scorekeeper interface. Allows match scorers to:
   * Select active pitch personnel (Striker, Non-Striker, Bowler) with one-click strike swapping.
-  * Enter instant runs using numeric pads (`0 Dot`, `1 Single`, `2 Double`, `3 Three`, `4 Four`, `6 Six`).
+  * Enter instant runs using numeric keypad buttons (`0 Dot`, `1 Single`, `2 Double`, `3 Three`, `4 Four`, `6 Six`).
   * Record extras (`Wide`, `No-Ball`, `Bye`, `Leg-Bye`) with automated ball invalidation for legal counts.
   * Trigger dismissal modal for Wickets (`Bowled`, `Caught`, `LBW`, `Run Out`, `Stumped`, `Hit Wicket`).
   * View instant ball-by-ball timeline stream on the right pane.
 
 ---
 
-### 3. International Standard Scorecard (`/matches/:id/scorecard`)
-![International Scorecard](docs/screenshots/scorecard.jpg)
+### 4. International Standard Scorecard (`/matches/1/scorecard`)
+![International Scorecard](docs/screenshots/scorecard.png)
 * **Description**: Broadcast-grade scorecard inspired by ESPNcricinfo and Cricbuzz. Provides:
   * Tabbed innings switcher (Innings 1 vs Innings 2).
-  * Batting performance table: Runs (R), Balls (B), Fours (4s), Sixes (6s), Strike Rate (SR), and dismissal commentary (e.g. `c Buttler b Rashid`, `not out`).
+  * Batting performance table: Runs (R), Balls (B), Fours (4s), Sixes (6s), Strike Rate (SR), and dismissal commentary (e.g. `c Carey b Cummins`, `not out`).
   * Bowling spell table: Overs (O), Maidens (M), Runs Conceded (R), Wickets (W), and Economy (ECON).
   * Extras breakdown and cumulative totals.
+
+---
+
+### 5. Franchise Squad Management (`/teams`)
+![Teams Management](docs/screenshots/teams.png)
+* **Description**: Franchise management interface listing registered international and club squads (India, Australia, England) with squad strength badges, country origins, short codes, and direct links to manage squad rosters.
+
+---
+
+### 6. Players Directory (`/players`)
+![Players Directory](docs/screenshots/players.png)
+* **Description**: Comprehensive directory of registered players with instant search by name/team and quick filter pills by role (`Batsman`, `Bowler`, `All-Rounder`, `Wicket Keeper`). Includes Jersey numbers and CRUD editing tools.
 
 ---
 
